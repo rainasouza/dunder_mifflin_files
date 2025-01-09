@@ -15,7 +15,6 @@ const NavBar = () => {
             <Nav.Link as={Link} to="/episodes" className="nav-link">Episodes</Nav.Link>
             <Nav.Link as={Link} to="/seasons" className="nav-link">Seasons</Nav.Link>
             <Nav.Link as={Link} to="/characters" className="nav-link">Characters</Nav.Link>
-            <p>Developed by Raína Araújo </p>
           </Nav>
         </Navbar.Collapse>
       </Container>
