@@ -1,0 +1,93 @@
+/* Seasons.css */
+
+.seasons-container {
+    font-family: Arial, sans-serif;
+    background-color: #f3cba5;
+    padding: 2rem;
+    margin: 0;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 2px solid #975a5e;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    color: #453953;
+    box-sizing: border-box;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #ddbc89;
+}
+
+.seasons-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.season-card {
+    background-color: #f9f3cf;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #975a5e;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.season-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.season-title {
+    color: #113f67;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.season-details {
+    color: #453953;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.season-description {
+    color: #453953;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.season-rating {
+    color: #aa512f;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .search-input {
+        font-size: 1rem;
+    }
+
+    .season-card {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        font-size: 1rem;
+    }
+
+    .season-card {
+        font-size: 0.85rem;
+        padding: 0.8rem;
+    }
+}

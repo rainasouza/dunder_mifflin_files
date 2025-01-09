@@ -1,0 +1,109 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3cba5;
+  margin: 0;
+  padding: 0;
+}
+
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  background: #f3cba5;
+}
+
+.quote-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f3cf;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.character-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.character-avatar:hover {
+  transform: scale(1.1);
+}
+
+
+.quote-container {
+  margin-top: 1rem;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  color: #453953;
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.author {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #aa512f;
+}
+
+
+@media (max-width: 768px) {
+  .quote-card {
+    padding: 1.5rem;
+  }
+
+  .quote-text {
+    font-size: 1.1rem;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+
+  .character-avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-card {
+    padding: 1rem;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
+
+  .author {
+    font-size: 0.9rem;
+  }
+
+  .character-avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
